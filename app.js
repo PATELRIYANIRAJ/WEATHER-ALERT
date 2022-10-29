@@ -48,7 +48,7 @@ const Weather = mongoose.model("Weather",weatherSchema);
 
 
 
-const cronJob = new CronJob('* * 7 * * *', run);
+const cronJob = new CronJob('3 16 * * *', run);
 cronJob.start();
 
 async function run() {
